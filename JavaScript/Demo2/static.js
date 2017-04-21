@@ -223,9 +223,9 @@ console.log(k);
 
 function string2int(s) {
   var arr = s.split('');
-  // return arr;
+  return arr;
 var sum = arr.reduce(function (x, y) {
-    return x  + y;
+    return x * 10 + y;
 });
 return sum;
 }
