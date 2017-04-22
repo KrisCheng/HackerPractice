@@ -215,18 +215,122 @@ function add(x, y, f) {
 console.log(add(-5, 6, Math.abs));
 
 //map && reduce
+function pow(x){
+  return x*x;
+}
+var arr4 = [1,2,3,4,5,6,7,8,9];
+console.log(arr4.map(pow));
+
 var arr3 = [1, 3, 5, 7, 9];
 var k = arr3.reduce(function (x, y) {
     return x + y;
 });
 console.log(k);
 
-function string2int(s) {
-  var arr = s.split('');
-  return arr;
-var sum = arr.reduce(function (x, y) {
-    return x * 10 + y;
+//filter
+var arr5 = [1, 2, 4, 5, 6, 9, 10, 15];
+var r = arr5.filter(function (x) {
+    return x % 2 !== 0;
 });
-return sum;
+console.log(r);
+
+var arr6 = ['A', '', 'B', null, undefined, 'C', ' s  sd '];
+var r = arr6.filter(function (s) {
+    return s; // 注意：IE9以下的版本没有trim()方法
+});
+console.log(r);
+
+//去重
+var
+    r,
+    arr = ['apple', 'strawberry', 'banana', 'pear', 'apple', 'orange', 'orange', 'strawberry'];
+    r = arr.filter(function (element, index, self) {
+    return self.indexOf(element) === index;
+});
+console.log(r.toString());
+
+//筛选素数
+function get_primes(arr) {
+  return arr.filter(function (element) {
+if(element === 1){
+    return false;
 }
-console.log(string2int('12345'));
+for(var i = 2; i<element; i++){
+if(element%i === 0){
+return false;
+}
+}
+return true;
+});
+}
+var
+    x,
+    r,
+    arr = [];
+for (x = 1; x < 100; x++) {
+    arr.push(x);
+}
+r = get_primes(arr);
+if (r.toString() === [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97].toString()) {
+    console.log(r.toString());
+} else {
+    alert('测试失败: ' + r.toString());
+}
+
+//sort
+var arr6 = ['Google', 'apple', 'Microsoft'];
+arr6.sort(function (s1, s2) {
+    var x1 = s1.toUpperCase();
+    var x2 = s2.toUpperCase();
+    if (x1 < x2) {
+        return -1;
+    }
+    if (x1 > x2) {
+        return 1;
+    }
+    return 0;
+}); // ['apple', 'Google', 'Microsoft']
+console.log(arr6.sort());
+
+//闭包 todo（不是很理解）
+// var n=999;
+// 　　function f1(){
+// 　　　　alert(n);
+// 　　}
+// 　　f1(); // 999
+//
+// function f1(){
+// 　　　　var n=999;
+// 　　}
+// 　　alert(n); // error
+
+// function f1(){
+// 　　　　var n=999;
+// 　　　　var nAdd=function(){n+=1}
+// 　　　　function f2(){
+// 　　　　　　alert(n);
+// 　　　　}
+// 　　　　return f2;
+// 　　}
+// 　　var result=f1();
+// 　　result(); // 999
+// 　　result.nAdd();
+// 　　result(); // 1000　　
+
+//generator
+function* fib(max) {
+    var
+        t,
+        a = 0,
+        b = 1,
+        n = 1;
+    while (n < max) {
+        yield a;
+        t = a + b;
+        a = b;
+        b = t;
+        n ++;
+    }
+    return a;
+}
+fib(5);
