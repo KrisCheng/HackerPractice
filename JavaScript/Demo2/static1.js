@@ -1,4 +1,5 @@
 'use strict';
+//some basic usage of JavaScript
 var name = '小明1234';
 var age = 20;
 var s = 'Hello';
