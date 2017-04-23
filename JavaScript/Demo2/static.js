@@ -334,3 +334,24 @@ function* fib(max) {
     return a;
 }
 fib(5);
+
+//Object
+console.log(typeof 1);
+console.log(typeof NaN);
+console.log(typeof 'str');
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+console.log(typeof {});
+console.log(typeof []);
+console.log(typeof Math.abs);
+var Num = new Number(123);
+console.log(typeof Num);
+console.log(Num === 123); //false
+
+var n1 = Number('123'); // 123，相当于parseInt()或parseFloat()
+console.log(typeof n1.toString());
+var b1 = Boolean('false'); // true! 'false'字符串转换结果为true！因为它是非空字符串！
+var b2 = Boolean(''); //false
+console.log(b1);//true
+console.log(b2);//false
