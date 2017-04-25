@@ -1,8 +1,8 @@
 # HackerPractice
 this is a code snippet set which comes from my daily practice.
 
-
 ##JavaScript
+
 ###todo：
 * 闭包
 * AJAX
