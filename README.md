@@ -3,7 +3,6 @@ this is a code snippet set which comes from my daily practice.
 
 
 ##JavaScript
-~~正则表达式~~
 ###todo：
 * 闭包
 * AJAX
