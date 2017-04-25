@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo5</title>
+  </head>
+  <body>
+    <input type="text" id="email" value="test">
+    <label><input type="radio" id="monday" value="1">Monday</label>
+    <input type="date" value="2015-07-01">
+    <input type="color" value="#ff0000">
+    <p>
+      <!--  提交表单 -->
+      <form id="test-form">
+        <input type="text" name="test" value="todo" id='test-form-input'>
+        <button type="button" onclick="doSubmitForm()">Submit</button>
+      </form>
+    </p>
+    <!-- MD5 -->
+    <p>
+      <form id="login-form" method="post" onsubmit="return checkForm()">
+        <input type="text" id="username" name="username">
+        <input type="password" id="password" name="password">
+        <button type="submit">Submit</button>
+      </form>
+    </p>
+    <!-- 简单表单校验  -->
+    <p>
+      <form id="test-register" action="#" target="_blank" onsubmit="return checkRegisterForm()">
+    <p id="test-error" style="color:red"></p>
+    <p>
+        用户名: <input type="text" id="username-1" name="username">
+    </p>
+    <p>
+        口令: <input type="password" id="password-1" name="password">
+    </p>
+    <p>
+        重复口令: <input type="password" id="password-2">
+    </p>
+    <p>
+        <button type="submit">提交</button> <button type="reset">重置</button>
+    </p>
+</form>
+    </p>
+  </body>
+</html>
+<script src='static5.js'>
+</script>
