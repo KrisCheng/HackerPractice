@@ -1,9 +1,9 @@
 # HackerPractice
 this is a code snippet set which comes from my daily practice.
 
-##JavaScript
+## JavaScript
 
-###todo：
+### todo
 * 闭包
 * AJAX
 * 原型继承（js继承机制）
