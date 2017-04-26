@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a id="test-link" href="#0">点我试试</a>
+    <p></p>
+
+    <!-- 鼠标移动事件 -->
+    <span id="testMouseMoveSpan"></span>
+    <div id="testMouseMoveDiv" style="display: block; width: 300px; height: 120px; border: 1px solid #ccc;">
+      在此区域移动鼠标试试！
+    </div>
+
+    <!-- practice  全选/不全 -->
+    <form id="test-form">
+    <legend>请选择想要学习的编程语言：</legend>
+      <fieldset>
+          <p><label class="selectAll"><input type="checkbox"> <span class="selectAll">全选</span>
+            <span class="deselectAll">全不选</span></label>
+          <a href="#0" class="invertSelect">反选</a></p>
+          <p><label><input type="checkbox" name="lang" value="javascript"> JavaScript</label></p>
+          <p><label><input type="checkbox" name="lang" value="python"> Python</label></p>
+          <p><label><input type="checkbox" name="lang" value="ruby"> Ruby</label></p>
+          <p><label><input type="checkbox" name="lang" value="haskell"> Haskell</label></p>
+          <p><label><input type="checkbox" name="lang" value="scheme"> Scheme</label></p>
+          <p><button type="submit">Submit</button></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
+<script src="../node_modules/jquery/dist/jquery.js">
+</script>
+<script src="static3.js">
+</script>
