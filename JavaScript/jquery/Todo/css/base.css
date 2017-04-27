@@ -1,0 +1,15 @@
+body {
+  background: LightSteelBlue;
+  color: white; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto; }
+  .container .task-list {
+    margin: 5px 0; }
+    .container .task-list .task-item {
+      padding: 10px;
+      margin-bottom: 2px;
+      border-radius: 3px; }
+
+/*# sourceMappingURL=base.css.map */

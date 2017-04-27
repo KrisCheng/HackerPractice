@@ -4,5 +4,4 @@
  */
 ;(function() {
     'use strict';
-    console.log('ss');
 })();

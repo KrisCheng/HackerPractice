@@ -1,0 +1,21 @@
+body{
+    background: LightSteelBlue;
+    color: white;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    .add-task{
+    }
+    .task-list{
+        margin:5px 0;
+        .task-item {
+            padding: 10px;
+            margin-bottom: 2px;
+            border-radius: 3px;
+        }
+    }
+    .task-detail{
+
+    }
+}
