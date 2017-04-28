@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^3.1.0"
+    "jquery": "^3.1.0",
+    "storejs": "^1.0.14"
   },
   "devDependencies": {},
   "scripts": {

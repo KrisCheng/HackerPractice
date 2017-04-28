@@ -39,7 +39,7 @@ button {
   .container .add-task button:hover {
     background: DarkOrange;
     color: white;
-    transition: .3s; }
+    transition: .2s; }
   .container .add-task input[type=text]:focus {
     background: white;
     transition: .3s; }
@@ -54,10 +54,16 @@ button {
       .container .task-list .task-item .task-content {
         font-size: 14px;
         line-height: 14px; }
+      .container .task-list .task-item .action {
+        float: right;
+        margin-left: 10px;
+        cursor: pointer; }
+      .container .task-list .task-item .action:hover {
+        color: #A52A2A; }
     .container .task-list .task-item:hover {
       background: DarkOrange;
       color: white;
-      transition: .4s; }
+      transition: .3s; }
   .container .task-detail {
     border-radius: 3px;
     background: white;
@@ -94,6 +100,6 @@ button {
     .container .task-detail .remind .update:hover {
       background: DarkOrange;
       color: white;
-      transition: .4s; }
+      transition: .2s; }
 
 /*# sourceMappingURL=base.css.map */

@@ -44,7 +44,7 @@ button{
     .add-task button:hover{
         background: DarkOrange;
         color:white;
-        transition:.3s;
+        transition:.2s;
     }
    .add-task input[type=text]:focus{
         background: white;
@@ -62,11 +62,19 @@ button{
                 font-size: 14px;
                 line-height: 14px;
             }
+            .action{
+                float: right;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            .action:hover{
+                color: 	#A52A2A;
+            }
         }
         .task-item:hover{
             background: DarkOrange;
             color:white;
-            transition:.4s;
+            transition:.3s;
         }
     }
     .task-detail{
@@ -112,7 +120,7 @@ button{
             .update:hover{
                 background: DarkOrange;
                 color:white;
-                transition:.4s;
+                transition:.2s;
             }
         }
     }

@@ -9,22 +9,13 @@
 <body>
     <div class="container">
         <h1 class="title">My Todo List</h1>
-        <div class="add-task">
-            <input type="text" placeholder="eg:下午记得买菜">
-            <button>Submit</button>
-        </div>
+        <form class="add-task">
+            <input type="text" name="content" placeholder="eg:下午记得买菜" autofocus autocomplete="off">
+            <button type="submit">Submit</button>
+        </form>
 
         <div class="task-list">
-            <div class="task-item">
-                <span><input type="checkbox"></span>
-                <span class="task-content">task item1</span>
-                <span>delete</span>
-            </div>
-            <div class="task-item">
-                <span><input type="checkbox"></span>
-                <span class="task-content">task item2</span>
-                <span>delete</span>
-            </div>
+
         </div>
 
         <div class="task-detail">
@@ -46,5 +37,6 @@
 </body>
 </html>
 <script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/storejs/dist/store.js"></script>
 <script src="js/base.js"></script>
 
