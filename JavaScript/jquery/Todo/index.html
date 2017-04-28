@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
 <body>
     <div class="container">
-        <h1>My Todo List</h1>
+        <h1 class="title">My Todo List</h1>
         <div class="add-task">
-            <input type="text">
-            <button>submit</button>
+            <input type="text" placeholder="eg:下午记得买菜">
+            <button>Submit</button>
         </div>
 
         <div class="task-list">
@@ -29,12 +29,16 @@
 
         <div class="task-detail">
             <div class="content">
+                下午记得买菜
             </div>
             <div class="desc">
+                <textarea class="description"></textarea>
             </div>
             <div class="remind">
-                <input type="date">
-                <button type="submit">submit</button>
+                <p>Remind Time</p>
+                <input class="date" type="date">
+                <br>
+                <button class="update" type="submit">Update</button>
             </div>
         </div>
 

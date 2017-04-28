@@ -1,21 +1,119 @@
 body{
-    background: LightSteelBlue;
+    background: #123456;
     color: white;
 }
+input[type=text], input[type=date]{
+    border: 0;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+button{
+    border: 0;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
 .container{
+    font-family: "STHeiti";
     max-width: 900px;
     margin: 0 auto;
+    .title{
+        text-align:center;
+        margin: 10px auto;
+    }
     .add-task{
+        margin-bottom: 10px;
+    }
+    .add-task input[type=text]{
+        float: left;
+        width: 84%;
+        margin-right: 1%;
+        line-height: 14px;
+        font-size: 14px;
+        background: #ddd;
+    }
+    .add-task button{
+        background:	rgb(59,160,221);
+        color:black;
+        width: 12.5%;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .add-task button:hover{
+        background: DarkOrange;
+        color:white;
+        transition:.3s;
+    }
+   .add-task input[type=text]:focus{
+        background: white;
+        transition:.3s;
     }
     .task-list{
         margin:5px 0;
         .task-item {
             padding: 10px;
-            margin-bottom: 2px;
+            margin-bottom: 3px;
             border-radius: 3px;
+            background: white;
+            color:darkgray;
+            .task-content{
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+        .task-item:hover{
+            background: DarkOrange;
+            color:white;
+            transition:.4s;
         }
     }
     .task-detail{
-
+        border-radius: 3px;
+        background: white;
+        color: black;
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        bottom: 0;
+        right: 0;
+        .content{
+            font-weight: 900;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .desc{
+            .description{
+                width: 100%;
+                height: 100px;
+                margin: 0 auto;
+                border: 1px solid #CFCFCF;
+                background: #E8E8E8;
+                font-size: 14px;
+                resize: none;
+            }
+        }
+        .remind{
+            .date{
+                border: 1px solid #CFCFCF;
+                width: 96.5%;
+                margin-bottom: 5px;
+                background: #E8E8E8;
+            }
+            .update{
+                margin-top: 5px;
+                line-height: 14px;
+                font-size: 14px;
+                width: 80px;
+                background:	rgb(59,160,221);
+            }
+            .update:hover{
+                background: DarkOrange;
+                color:white;
+                transition:.4s;
+            }
+        }
     }
 }
