@@ -78,6 +78,9 @@ button {
     color: white;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px; }
+  .container .task-detail-cancel:hover {
+    background: DarkOrange;
+    transition: .2s; }
   .container .task-detail {
     display: none;
     background: white;

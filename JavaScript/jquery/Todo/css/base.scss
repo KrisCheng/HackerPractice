@@ -92,6 +92,10 @@ button{
             border-bottom-right-radius:5px;
             border-bottom-left-radius:5px;
         }
+        .task-detail-cancel:hover{
+            background: DarkOrange;
+            transition:.2s;
+        }
         .task-detail {
             display: none;
             background: white;
