@@ -65,6 +65,7 @@ button {
       color: white;
       transition: .3s; }
   .container .task-detail {
+    display: none;
     border-radius: 3px;
     background: white;
     color: black;
@@ -91,15 +92,16 @@ button {
       width: 96.5%;
       margin-bottom: 5px;
       background: #E8E8E8; }
-    .container .task-detail .remind .update {
+    .container .task-detail .remind .update, .container .task-detail .remind .cancel {
       margin-top: 5px;
       line-height: 14px;
       font-size: 14px;
-      width: 80px;
-      background: #3ba0dd; }
-    .container .task-detail .remind .update:hover {
-      background: DarkOrange;
-      color: white;
-      transition: .2s; }
+      width: 80px; }
+    .container .task-detail .remind .update {
+      background: #3ba0dd;
+      color: white; }
+    .container .task-detail .remind .cancel {
+      background: Gray;
+      color: white; }
 
 /*# sourceMappingURL=base.css.map */

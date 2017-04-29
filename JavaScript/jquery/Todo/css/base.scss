@@ -77,51 +77,54 @@ button{
             transition:.3s;
         }
     }
-    .task-detail{
-        border-radius: 3px;
-        background: white;
-        color: black;
-        width: 50%;
-        height: 100%;
-        padding: 10px;
-        bottom: 0;
-        right: 0;
-        .content{
-            font-weight: 900;
-            font-size: 16px;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-        .desc{
-            .description{
-                width: 100%;
-                height: 100px;
-                margin: 0 auto;
-                border: 1px solid #CFCFCF;
-                background: #E8E8E8;
-                font-size: 14px;
-                resize: none;
+        .task-detail {
+            display: none;
+            border-radius: 3px;
+            background: white;
+            color: black;
+            width: 50%;
+            height: 100%;
+            padding: 10px;
+            bottom: 0;
+            right: 0;
+            .content {
+                font-weight: 900;
+                font-size: 16px;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            .desc {
+                .description {
+                    width: 100%;
+                    height: 100px;
+                    margin: 0 auto;
+                    border: 1px solid #CFCFCF;
+                    background: #E8E8E8;
+                    font-size: 14px;
+                    resize: none;
+                }
+            }
+            .remind {
+                .date {
+                    border: 1px solid #CFCFCF;
+                    width: 96.5%;
+                    margin-bottom: 5px;
+                    background: #E8E8E8;
+                }
+                .update, .cancel {
+                    margin-top: 5px;
+                    line-height: 14px;
+                    font-size: 14px;
+                    width: 80px;
+                }
+                .update{
+                    background: rgb(59, 160, 221);
+                    color: white;
+                }
+                .cancel{
+                    background: Gray;
+                    color: white;
+                }
             }
         }
-        .remind{
-            .date{
-                border: 1px solid #CFCFCF;
-                width: 96.5%;
-                margin-bottom: 5px;
-                background: #E8E8E8;
-            }
-            .update{
-                margin-top: 5px;
-                line-height: 14px;
-                font-size: 14px;
-                width: 80px;
-                background:	rgb(59,160,221);
-            }
-            .update:hover{
-                background: DarkOrange;
-                color:white;
-                transition:.2s;
-            }
-        }
-    }
 }

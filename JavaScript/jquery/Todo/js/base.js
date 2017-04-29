@@ -5,10 +5,15 @@
 ;(function() {
     'use strict';
     var $form_add_task = $('.add-task'),
-        $delete_task,
+        $task_delete_trigger,
+        $task_detail = $('.task-detail'),
+        $task_detail_cancel = $('.cancel'),
+        $task_detail_trigger,
         task_list = {};
 
     init();
+
+    $task_detail_cancel.on('click',hide_task_detail);
 
     $form_add_task.on('submit', function (e){
         var new_task = {};
@@ -24,8 +29,48 @@
         }
     });
 
+    function listen_task_detail(){
+        $task_detail_trigger.on('click', function(){
+            var $this = $(this);
+            var $item = $this.parent();
+            var index = $item.data('index');
+            show_task_detail(index);
+        })
+    }
+
+    function show_task_detail(index){
+        render_task_detail(index);
+        $task_detail.show();
+    }
+
+    function hide_task_detail(){
+        $task_detail.hide();
+    }
+
+    function render_task_detail(index){
+        if(index === undefined || !task_list[index]){
+            return;
+        }
+        var item = task_list[index];
+        var tpl =   '<div class="content">'+
+                    item.content+
+                    '</div>'+
+                    '<div class="desc">'+
+                    '<textarea class="description"></textarea>'+
+                    '</div>'+
+                    '<div class="remind">'+
+                    '<p>Remind Time</p>'+
+                    '<input class="date" type="date">'+
+                    '<br>'+
+                    '<button class="update" type="submit">Update</button>'+
+                    '<button class="cancel" type="submit">Cancel</button>'+
+                    '</div>';
+
+        $task_detail.html(tpl);
+    }
+
     function listen_task_delete() {
-        $delete_task.on('click', function () {
+        $task_delete_trigger.on('click', function () {
             var $this = $(this);
             var $item = $this.parent();
             var index = $item.data('index');
@@ -47,6 +92,9 @@
         }
     }
 
+    /*
+    * 渲染所有Task模板
+    * */
     function render_task_list(){
         var $task_list = $('.task-list');
         $task_list.html('');//清除之前遗留html
@@ -54,8 +102,10 @@
             var $task = render_task_item(task_list[i],i);
             $task_list.append($task);
         }
-        $delete_task= $('.action.delete');
+        $task_delete_trigger= $('.action.delete');
+        $task_detail_trigger= $('.action.detail');
         listen_task_delete();
+        listen_task_detail();
     }
 
     function render_task_item(data, index){
@@ -67,7 +117,7 @@
             '<span><input type="checkbox"></span>'+
             '<span class="task-content">'+ data.content+'</span>'+
             '<span class="action delete">Delete</span>'+
-            '<span class="action">Detail</span>'+
+            '<span class="action detail">Detail</span>'+
             '</div>';
         return $(list_item_tpl);
     }
@@ -84,4 +134,5 @@
         delete task_list[index];
         refresh_task_list();
     }
+
 })();
