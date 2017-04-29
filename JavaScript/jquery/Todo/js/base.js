@@ -7,7 +7,7 @@
     var $form_add_task = $('.add-task'),
         $task_delete_trigger,
         $task_detail = $('.task-detail'),
-        $task_detail_cancel = $('.cancel'),
+        $task_detail_cancel = $('.task-detail-cancel'),
         $task_detail_trigger,
         task_list = {};
 
@@ -41,10 +41,12 @@
     function show_task_detail(index){
         render_task_detail(index);
         $task_detail.show();
+        $task_detail_cancel.show();
     }
 
     function hide_task_detail(){
         $task_detail.hide();
+        $task_detail_cancel.hide();
     }
 
     function render_task_detail(index){
@@ -52,7 +54,7 @@
             return;
         }
         var item = task_list[index];
-        var tpl =   '<div class="content">'+
+        var tpl  =  '<div class="content">'+
                     item.content+
                     '</div>'+
                     '<div class="desc">'+
@@ -61,9 +63,6 @@
                     '<div class="remind">'+
                     '<p>Remind Time</p>'+
                     '<input class="date" type="date">'+
-                    '<br>'+
-                    '<button class="update" type="submit">Update</button>'+
-                    '<button class="cancel" type="submit">Cancel</button>'+
                     '</div>';
 
         $task_detail.html(tpl);

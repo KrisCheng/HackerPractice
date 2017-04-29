@@ -64,23 +64,38 @@ button {
       background: DarkOrange;
       color: white;
       transition: .3s; }
+  .container .task-detail-cancel {
+    display: none;
+    background: gray;
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
   .container .task-detail {
     display: none;
-    border-radius: 3px;
     background: white;
     color: black;
     width: 50%;
     height: 100%;
     padding: 10px;
     bottom: 0;
-    right: 0; }
+    right: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; }
     .container .task-detail .content {
       font-weight: 900;
       font-size: 16px;
       cursor: pointer;
       margin-bottom: 10px; }
     .container .task-detail .desc .description {
-      width: 100%;
+      width: 98.5%;
       height: 100px;
       margin: 0 auto;
       border: 1px solid #CFCFCF;
@@ -89,19 +104,8 @@ button {
       resize: none; }
     .container .task-detail .remind .date {
       border: 1px solid #CFCFCF;
-      width: 96.5%;
+      width: 95%;
       margin-bottom: 5px;
       background: #E8E8E8; }
-    .container .task-detail .remind .update, .container .task-detail .remind .cancel {
-      margin-top: 5px;
-      line-height: 14px;
-      font-size: 14px;
-      width: 80px; }
-    .container .task-detail .remind .update {
-      background: #3ba0dd;
-      color: white; }
-    .container .task-detail .remind .cancel {
-      background: Gray;
-      color: white; }
 
 /*# sourceMappingURL=base.css.map */
