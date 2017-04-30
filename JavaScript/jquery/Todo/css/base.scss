@@ -74,6 +74,20 @@ button{
                 color: 	#A52A2A;
             }
         }
+        .completed{
+            color: #aaa;
+            opacity: 0.4;
+        }
+        .completed:after{
+            content: '';
+            height: 1px;
+            background: #aaa;
+            width: 98%;
+            position: relative;
+            top: -10px;
+            display: block;
+            float: right;
+        }
         .task-item:hover{
             background: DarkOrange;
             color:white;

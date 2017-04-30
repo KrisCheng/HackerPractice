@@ -62,6 +62,18 @@ button {
         cursor: pointer; }
       .container .task-list .task-item .action:hover {
         color: #A52A2A; }
+    .container .task-list .completed {
+      color: #aaa;
+      opacity: 0.4; }
+    .container .task-list .completed:after {
+      content: '';
+      height: 1px;
+      background: #aaa;
+      width: 98%;
+      position: relative;
+      top: -10px;
+      display: block;
+      float: right; }
     .container .task-list .task-item:hover {
       background: DarkOrange;
       color: white;
