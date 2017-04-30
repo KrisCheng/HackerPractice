@@ -14,9 +14,17 @@
         $update_form,
         $task_detail_content,
         $task_detail_content_input,
-        $checkbox_complete;
+        $checkbox_complete,
+        $msg = $('.msg'),
+        $msg_content = $msg.find('.msg-content'),
+        $msg_content_cancel = $msg.find('.msg-cancel'),
+        $alerter = $('.alerter');
 
     init();
+
+    $msg_content_cancel.on('click', function () {
+        hide_msg()
+    });
 
     $form_add_task.on('submit', function (e){
         var new_task = {};
@@ -52,7 +60,6 @@
         $checkbox_complete.on('click', function(){
             var $this = $(this);
             var index = $this.parent().parent().data('index');
-            console.log(index);
             var item = get(index);
             if(item.complete){
                 update_task(index, {complete: false});
@@ -87,6 +94,7 @@
         //初次判断
         if(item.desc === undefined){
             item.desc='';
+            item.remind_date='';
         }
         var tpl  =  '<form>'+
                     '<div class="content">'+
@@ -102,13 +110,14 @@
                     '</div>'+
                     '<div class="remind">'+
                     '<p>Remind Time</p>'+
-                    '<input name="remind_date" class="date" type="date" value="' + item.remind_date+ '">'+
+                    '<input  class="datetime" name="remind_date" type="text" value="' + item.remind_date +'">'+
                     '<button class="update" type="submit">Update</button>'+
                     '<button class="cancel" type="reset">Cancel</button>'+
                     '</div>'+
                     '</form>';
 
         $task_detail.html(tpl);
+        $('.datetime').datetimepicker();
         $update_form = $task_detail.find('form');
 
         //双击变更Task名称
@@ -156,7 +165,36 @@
         if(task_list.length){
             render_task_list();
         }
+        task_remind_check();
         //store.clear(); //用于清除缓存
+    }
+
+    function task_remind_check(){
+        var current_timestamp;
+        var itl = setInterval(function(){
+            for(var i = 0; i < task_list.length; i++){
+                var task_timestamp,item = get(i);
+                if(item === null || item.remind_date === undefined || item.informed){
+                        continue;
+                }
+                current_timestamp = (new Date()).getTime();
+                task_timestamp = (new Date(item.remind_date)).getTime();
+                if((current_timestamp - task_timestamp) >= 1){
+                    update_task(i, {informed :true});
+                    show_msg(item.content);
+                }
+            }
+        },300);
+    }
+
+    function show_msg(msg){
+        $msg_content.html(msg);
+        $msg.show();
+        $alerter.get(0).play();
+    }
+
+    function hide_msg(){
+        $msg.hide();
     }
 
     /*

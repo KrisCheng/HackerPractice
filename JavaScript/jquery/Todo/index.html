@@ -6,7 +6,12 @@
 </head>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+<link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
 <body>
+    <div class="msg">
+        <span class="msg-content"></span>
+        <span class="msg-cancel">知道啦!</span>
+    </div>
     <div class="container">
         <h1 class="title">My Todo List</h1>
         <form class="add-task">
@@ -20,9 +25,10 @@
         <div class="task-detail">
         </div>
         </div>
+    <video class="alerter" src="alert.mp3"></video>
 </body>
-</html>
-<script src="node_modules/jquery/dist/jquery.js"></script>
+</html><script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
 <script src="node_modules/storejs/dist/store.js"></script>
 <script src="js/base.js"></script>
 

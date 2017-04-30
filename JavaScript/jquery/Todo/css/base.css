@@ -14,6 +14,22 @@ button {
   padding: 10px;
   cursor: pointer; }
 
+.msg {
+  display: none;
+  text-align: center;
+  background: yellow;
+  width: 100%;
+  height: 30px;
+  margin-top: -7px;
+  line-height: 30px;
+  font-size: 16px;
+  color: red; }
+  .msg .msg-cancel {
+    margin-left: 5px;
+    cursor: pointer; }
+  .msg .msg-cancel:hover {
+    color: orange; }
+
 .container {
   font-family: "STHeiti";
   max-width: 900px;
@@ -110,11 +126,13 @@ button {
       background: #E8E8E8;
       font-size: 14px;
       resize: none; }
-    .container .task-detail .remind .date {
+    .container .task-detail .remind .datetime {
       border: 1px solid #CFCFCF;
       width: 95%;
       margin-bottom: 5px;
-      background: #E8E8E8; }
+      background: #E8E8E8;
+      line-height: 14px;
+      font-size: 14px; }
     .container .task-detail .remind .update, .container .task-detail .remind .cancel {
       margin: 10px 10px 0 0;
       line-height: 14px;
@@ -126,5 +144,9 @@ button {
     .container .task-detail .remind .cancel {
       background: Gray;
       color: white; }
+
+.alerter {
+  width: 0;
+  height: 0; }
 
 /*# sourceMappingURL=base.css.map */
