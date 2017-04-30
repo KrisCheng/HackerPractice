@@ -77,25 +77,7 @@ button{
             transition:.3s;
         }
     }
-        .task-detail-cancel{
-            display: none;
-            background: gray;
-            width: 50%;
-            height: 20px;
-            padding: 10px;
-            bottom: 0;
-            right: 0;
-            text-align: center;
-            font-size: 18px;
-            line-height: 20px;
-            color: white;
-            border-bottom-right-radius:5px;
-            border-bottom-left-radius:5px;
-        }
-        .task-detail-cancel:hover{
-            background: DarkOrange;
-            transition:.2s;
-        }
+
         .task-detail {
             display: none;
             background: white;
@@ -112,6 +94,15 @@ button{
                 font-size: 16px;
                 cursor: pointer;
                 margin-bottom: 10px;
+            }
+            .content-modify{
+                display: none;
+                border: 1px solid #CFCFCF;
+                width: 95%;
+                margin-bottom: 5px;
+                background: #E8E8E8;
+                line-height: 16px;
+                font-size: 16px;
             }
             .desc {
                 .description {
@@ -131,6 +122,21 @@ button{
                     margin-bottom: 5px;
                     background: #E8E8E8;
                 }
+                .update, .cancel {
+                    margin: 5px 10px 0 0;
+                    line-height: 14px;
+                    font-size: 14px;
+                    width: 80px;
+                }
+                .update{
+                    background: rgb(59, 160, 221);
+                    color: white;
+                }
+                .cancel{
+                    background: Gray;
+                    color: white;
+                }
+
             }
         }
 }

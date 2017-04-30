@@ -4,16 +4,18 @@
  */
 ;(function() {
     'use strict';
+
     var $form_add_task = $('.add-task'),
         $task_delete_trigger,
-        $task_detail = $('.task-detail'),
-        $task_detail_cancel = $('.task-detail-cancel'),
         $task_detail_trigger,
-        task_list = {};
+        $task_detail = $('.task-detail'),
+        task_list = {},
+        current_index,
+        $update_form,
+        $task_detail_content,
+        $task_detail_content_input;
 
     init();
-
-    $task_detail_cancel.on('click',hide_task_detail);
 
     $form_add_task.on('submit', function (e){
         var new_task = {};
@@ -40,13 +42,20 @@
 
     function show_task_detail(index){
         render_task_detail(index);
+        current_index = index;
         $task_detail.show();
-        $task_detail_cancel.show();
+    }
+
+    function update_task(index, data){
+        if(index === undefined || !task_list[index]){
+            return;
+        }
+        task_list[index] = data;
+        refresh_task_list();
     }
 
     function hide_task_detail(){
         $task_detail.hide();
-        $task_detail_cancel.hide();
     }
 
     function render_task_detail(index){
@@ -54,18 +63,55 @@
             return;
         }
         var item = task_list[index];
-        var tpl  =  '<div class="content">'+
+        //初次判断
+        if(item.desc === undefined){
+            item.desc='';
+        }
+        var tpl  =  '<form>'+
+                    '<div class="content">'+
                     item.content+
                     '</div>'+
+                    '<div>'+
+                    '<input class="content-modify" type="text" name="content" value="' + item.content+ '">'+
+                    '</div>'+
                     '<div class="desc">'+
-                    '<textarea class="description"></textarea>'+
+                    '<textarea  name="desc" class="description">'+
+                    item.desc+
+                    '</textarea>'+
                     '</div>'+
                     '<div class="remind">'+
                     '<p>Remind Time</p>'+
-                    '<input class="date" type="date">'+
-                    '</div>';
+                    '<input name="remind_date" class="date" type="date" value="' + item.remind_date+ '">'+
+                    '<button class="update" type="submit">Update</button>'+
+                    '<button class="cancel" type="reset">Cancel</button>'+
+                    '</div>'+
+                    '</form>';
 
         $task_detail.html(tpl);
+        $update_form = $task_detail.find('form');
+
+        //双击变更Task名称
+        $task_detail_content = $update_form.find('.content');
+        $task_detail_content_input = $update_form.find('[name=content]');
+        $task_detail_content.on('dblclick',function(){
+            $task_detail_content_input.show();
+            $task_detail_content.hide();
+        });
+
+        $update_form.on('reset', function(e){
+            e.preventDefault();
+            hide_task_detail();
+        })
+
+        $update_form.on('submit', function(e){
+            e.preventDefault();
+            var data = {};
+            data.content = $(this).find('[name=content]').val();
+            data.desc = $(this).find('[name=desc]').val();
+            data.remind_date = $(this).find('[name=remind_date]').val();
+            update_task(index,data);
+            hide_task_detail();
+        })
     }
 
     function listen_task_delete() {
