@@ -72,7 +72,7 @@
                     item.content+
                     '</div>'+
                     '<div>'+
-                    '<input class="content-modify" type="text" name="content" value="' + item.content+ '">'+
+                    '<input class="content-modify" autofocus autocomplete="off" type="text" name="content" value="' + item.content+ '">'+
                     '</div>'+
                     '<div class="desc">'+
                     '<textarea  name="desc" class="description">'+
@@ -84,7 +84,7 @@
                     '<input name="remind_date" class="date" type="date" value="' + item.remind_date+ '">'+
                     '<button class="update" type="submit">Update</button>'+
                     '<button class="cancel" type="reset">Cancel</button>'+
-                    '</div>'+
+            '</div>'+
                     '</form>';
 
         $task_detail.html(tpl);
@@ -101,7 +101,7 @@
         $update_form.on('reset', function(e){
             e.preventDefault();
             hide_task_detail();
-        })
+        });
 
         $update_form.on('submit', function(e){
             e.preventDefault();
@@ -145,7 +145,7 @@
         $task_list.html('');//清除之前遗留html
         for(var i = 0; i < task_list.length; i++){
             var $task = render_task_item(task_list[i],i);
-            $task_list.append($task);
+            $task_list.prepend($task);
         }
         $task_delete_trigger= $('.action.delete');
         $task_detail_trigger= $('.action.detail');
@@ -159,7 +159,7 @@
         }
         var list_item_tpl =
             '<div class="task-item" data-index="'+index+'">'+
-            '<span><input type="checkbox"></span>'+
+            '<span class="task-checkbox"><input type="checkbox"></span>'+
             '<span class="task-content">'+ data.content+'</span>'+
             '<span class="action delete">Delete</span>'+
             '<span class="action detail">Detail</span>'+
