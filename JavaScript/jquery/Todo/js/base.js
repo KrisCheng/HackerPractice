@@ -6,6 +6,8 @@
     'use strict';
 
     var $form_add_task = $('.add-task'),
+        $window = $(window),
+        $body = $('body'),
         $task_delete_trigger,
         $task_detail_trigger,
         $task_detail = $('.task-detail'),
@@ -25,6 +27,138 @@
     $msg_content_cancel.on('click', function () {
         hide_msg()
     });
+
+    function delete_alert(arg){
+        if(!arg){
+            console.error('alert title is required!');
+        }
+
+        var conf = {},
+            $box,
+            $mask,
+            $title,
+            $content,
+            $confirm,
+            $cancel,
+            dfd,
+            timer,
+            confirmed;
+
+        if(typeof arg === 'string'){
+            conf.title = arg;
+        }
+        else{
+            conf = $.extend(conf, arg);
+        }
+
+        dfd = $.Deferred();
+
+        $box = $('<div>' +
+            '<div class="pop-title">'+ conf.title +'</div>'+
+            '<div>' +
+            '<button class="confirm">Confirm</button>' +
+            '<button class="cancel">Cancel</button>' +
+            '</div>'+
+            '</div>')
+        .css({
+            color:'black',
+            width: 300,
+            height: 150,
+            background: 'white',
+            position: 'fixed',
+            'border-radius': 3,
+            'box-shadow': '0px 2px 3px rgba(0,0,0,0.6)'
+        });
+
+        $title = $box.find('.pop-title').css({
+            margin:'30px 0 20px 0',
+            padding: '5px 10px',
+            'text-align':'center',
+            'font-weight': 900,
+            'font-size': '24px'
+        });
+
+        $confirm = $box.find('.confirm').css({
+            margin: '10px 10px 0px 75px',
+            'line-height': '14px',
+            'font-size': '14px',
+            width: '70px',
+            'text-align':'center',
+            background: 'rgb(59, 160, 221)',
+            color: 'white'
+        });
+
+        $cancel = $box.find('.cancel').css({
+            margin: '10px 0 0 0',
+            'text-align':'center',
+            'line-height': '14px',
+            'font-size': '14px',
+            width: '70px',
+            background: 'Gray',
+            color: 'white'
+        });
+
+        $mask = $('<div></div>')
+            .css({
+                position: 'fixed',
+                background: 'black',
+                opacity:'0.5',
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0
+            });
+
+        timer = setInterval(function(){
+            if(confirmed != undefined){
+                dfd.resolve(confirmed);
+                clearInterval(timer);
+                dismiss_alert();
+            }
+        },50);
+
+        function dismiss_alert(){
+            $mask.remove();
+            $box.remove();
+        }
+
+        $confirm.on('click',function(){
+            confirmed = true;
+        });
+
+        $cancel.on('click',function(){
+            confirmed = false;
+        });
+
+        $mask.on('click',function(){
+            confirmed = false;
+        });
+
+        function adjust_box_position(){
+            var window_width = $window.width(),
+                window_height = $window.height(),
+                box_width = $box.width(),
+                box_height = $box.height(),
+                move_x,
+                move_y;
+            move_x = (window_width - box_width)/2;
+            move_y = (window_height - box_height)/2 - 100;
+
+            $box.css({
+                left: move_x,
+                top: move_y
+            })
+        }
+
+        $window.on('resize', function () {
+            adjust_box_position();
+        });
+
+        $mask.appendTo($body);
+        $box.appendTo($body);
+        $window.resize();
+        return dfd.promise();
+    }
 
     $form_add_task.on('submit', function (e){
         var new_task = {};
@@ -149,8 +283,10 @@
             var $this = $(this);
             var $item = $this.parent();
             var index = $item.data('index');
-            var tmp = confirm("Confirm?");
-            tmp ? delete_task(index) : null;
+            delete_alert("Delete this task?")
+                .then(function(r){
+                    r ? delete_task(index) : null;
+                });
         });
     }
 
@@ -188,9 +324,9 @@
     }
 
     function show_msg(msg){
+        $alerter.get(0).play();
         $msg_content.html(msg);
         $msg.show();
-        $alerter.get(0).play();
     }
 
     function hide_msg(){
