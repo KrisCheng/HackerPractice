@@ -6,7 +6,7 @@ a learning code set, one demo only covers one feature or skill.
 
 ### JavaScript
 
-* ~~闭包~~
+* 闭包
 * AJAX
 * 原型继承（JS继承机制）
 * 正则表达式
