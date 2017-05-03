@@ -1,14 +1,1 @@
-/JavaScript/jQuery/node_modules
-/JavaScript/jQuery/Todo/node_modules
-JavaScript/jQuery/Todo/.idea/.name
-JavaScript/jQuery/Todo/.idea/misc.xml
-JavaScript/jQuery/Todo/.idea/modules.xml
-JavaScript/jQuery/Todo/.idea/Todo.iml
-JavaScript/jQuery/Todo/.idea/workspace.xml
-JavaScript/jQuery/Todo/.idea/markdown-navigator/profiles_settings.xml
-JavaScript/Node/.idea/.name
-JavaScript/Node/.idea/misc.xml
-JavaScript/Node/.idea/modules.xml
-JavaScript/Node/.idea/Node.iml
-JavaScript/Node/.idea/workspace.xml
-JavaScript/Node/.idea/markdown-navigator/profiles_settings.xml
+node_modules/
