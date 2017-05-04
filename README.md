@@ -2,9 +2,9 @@
 this is a code snippet set which comes from my daily practice,
 a learning code set, one demo only covers one feature or skill.
 
-## 一些需要深入的主题
+## 一些待研究的主题
 
-注：划掉表示有过研究，一般会附上个人思考的blog链接，欢迎交流，谢谢。
+注：划掉表示有过研究，一般会附上个人思考或有用的资源链接，欢迎交流，谢谢。
 
 ### JavaScript
 
