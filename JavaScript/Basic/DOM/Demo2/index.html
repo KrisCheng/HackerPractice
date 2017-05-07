@@ -3,22 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>DOM2</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>SnapShot</h1>
-    <ul>
-      <li>
-        <a href="imgs/github.jpg" onclick="changePic(this);return false;">GitHub</a>
-      </li>
-      <li>
-        <a href="imgs/apple.jpg" onclick="changePic(this);return false;">Apple</a>
-      </li>
-      <li>
-        <a href="imgs/android.jpg" onclick="changePic(this);return false;">Android</a>
-      </li>
-      <img id="placeholder" src="imgs/wechat.jpg" alt="wechat">
-    </ul>
-    <p id="desc">Please choose a image.</p>
+    <div class="header">
+      <h1>SnapShot</h1>
+    </div>
+    <div class="wrapper">
+      <ul>
+        <li class="item">
+          <img class="img" src="imgs/github.jpg">
+          <p><a href="imgs/github.jpg" onclick="changePic(this);return false;">GitHub</a></p>
+        </li>
+        <li class="item">
+          <img class="img" src="imgs/apple.jpg">
+          <p><a href="imgs/apple.jpg" onclick="changePic(this);return false;">Apple</a></p>
+        </li>
+        <li class="item">
+          <img class="img" src="imgs/android.jpg">
+          <p><a href="imgs/android.jpg" onclick="changePic(this);return false;">Android</a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="display">
+        <img id="placeholder" class="img" src="imgs/wechat.jpg" alt="wechat">
+        <p class="desc" id="desc">Please choose a image.</p>
+    </div>
   </body>
 </html>
 <script src="static.js"></script>
