@@ -42,3 +42,9 @@ console.log(re5.exec('102300')); // ['102300', '102300', '']
 //非贪婪匹配
 var re6 = /^(\d+?)(0*)$/;
 console.log(re6.exec('102300')); // ['102300', '1023', '00']
+
+//arrow function
+var sum = (x1,x2) => {
+  return x1+x2;
+}
+console.log(sum(1,11));
