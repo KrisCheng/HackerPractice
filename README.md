@@ -7,41 +7,47 @@ a learning code set, one demo only covers one feature or skill.
 注：划掉表示有过研究，一般会附上个人思考或有用的资源链接，欢迎交流，谢谢。
 
 ### JavaScript
-
 * ~~闭包~~ 
 	* [浅谈JavaScript闭包 — 从一道面试题说起](http://pengcheng.tech/2017/05/10/%E6%B5%85%E8%B0%88javascript%E9%97%AD%E5%8C%85-%E4%BB%8E%E4%B8%80%E9%81%93%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AF%B4%E8%B5%B7/) 
 	* [详解js闭包](https://segmentfault.com/a/1190000000652891)
 	* [学习JavaScript闭包](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
 * AJAX
-* 原型继承（JS继承机制）
+* JS继承（原型链）
 * 正则表达式
 * Promise
 * 回调函数
 * jquery
+* this对象
+* 浏览器跨域
 * Node.js
  	* RESTful API
  	* WebSocket
 
----
+
+### HTML
+* 离线存储
+
+
 
 ### CSS
 * 伪类
 * 清除浮动
+* 垂直居中
+* position属性
+* flex布局
 
----
 
 ### Python
 
 * generator
 
----
+
 ### Thinking
 
 * Design Patterns
 * Regular Expression
 * MVVM
 
----
 ### Tools
 
 * Webpack
