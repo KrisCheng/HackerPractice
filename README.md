@@ -6,7 +6,7 @@ a learning code set, one demo only covers one feature or skill.
 
 注：划掉表示有过较深入的研究，一般会附上个人思考或有用的资源链接，欢迎交流，谢谢。
 
-### JavaScript
+## JavaScript
 * ~~闭包~~ 
 	* [浅谈JavaScript闭包 — 从一道面试题说起](http://pengcheng.tech/2017/05/10/%E6%B5%85%E8%B0%88javascript%E9%97%AD%E5%8C%85-%E4%BB%8E%E4%B8%80%E9%81%93%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AF%B4%E8%B5%B7/) 
 	* [详解js闭包](https://segmentfault.com/a/1190000000652891)
@@ -28,17 +28,18 @@ a learning code set, one demo only covers one feature or skill.
  	* koa
  
 * RESTful API
-	*  	
+	* [开发REST API](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014735944539193ab2edd2740f44a79efb438a05e83727000) 
+	* [理解RESTful架构](http://www.ruanyifeng.com/blog/2011/09/restful.html) 	
 * WebSocket
 	* [WebSocket](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001472780997905c8f293615c5a42eab058b6dc29936a5c000) 
 
 
-### HTML
+## HTML
 * 离线存储
 
 
 
-### CSS
+## CSS
 * 伪类
 * 清除浮动
 * 垂直居中
@@ -46,18 +47,19 @@ a learning code set, one demo only covers one feature or skill.
 * flex布局
 
 
-### Python
+## Python
 
 * generator
 
 
-### Thinking
+## Thinking
 
 * Design Patterns
 * Regular Expression
-* MVVM
+* MVVM && MV*
+	* " I haven't truly met the same MVC implementation pattern twice." 
 
-### Tools
+## Tools
 
 * Webpack
 * gulp
