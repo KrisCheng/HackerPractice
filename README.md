@@ -35,7 +35,7 @@ a learning code set, one demo only covers one feature or skill.
 
 * Vue
 	* [仿饿了么前端 Vue2.0](https://github.com/KrisCheng/VuePractice)
-	* 
+	* [Vue实例](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001475449022563a6591e6373324d1abd93e0e3fa04397f000)
 
 ## HTML
 * 离线存储
