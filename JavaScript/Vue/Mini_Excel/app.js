@@ -19,6 +19,8 @@ app.use(async (ctx, next) => {
   ctx.response.set('X-Response-Time', `${execTime}ms`);
 });
 
+
+//路径的问题？？（待研究）
 let staticFiles = require('./static-files');
 app.use(staticFiles('/static/', __dirname + '/static'));
 
