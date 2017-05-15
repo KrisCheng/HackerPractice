@@ -19,7 +19,7 @@ module.exports = {
           ctx.response.status = 400;
           ctx.response.type = 'application/json';
           ctx.response.body = {
-            code: e.code || 'internal:unkonw_error',
+            code: e.code || 'internal:unkonwn_error',
             message: e.message || ''
           };
         }

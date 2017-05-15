@@ -2,7 +2,6 @@ const fs = require('fs');
 
 function addMapping(router, mapping){
   for(var url in mapping){
-    //??神秘代码
     if(url.startsWith('GET ')){
       var path = url.substring(4);
       router.get(path, mapping[url]);
