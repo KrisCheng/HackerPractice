@@ -1,6 +1,6 @@
 # HackerPractice
-this is a code snippet set which comes from my daily practice,
-a learning code set, one demo only covers one feature or skill.
+
+this is a code snippet set which comes from my daily practice(focus on the basic domain usage).
 
 ## TodoList
 
