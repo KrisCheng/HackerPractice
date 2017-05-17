@@ -46,7 +46,9 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * 伪类
 * 清除浮动
 * 垂直居中
-* position属性
+* ~~position属性~~
+	* [CSS Layout - The position Property](https://www.w3schools.com/css/css_positioning.asp) 
+	* [position](http://zh.learnlayout.com/position.html)
 * flex布局
 
 
