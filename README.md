@@ -4,7 +4,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 
 ## TodoList
 
-注：划掉表示有感觉有过一些研究，一般会附上个人思考或有用的资源链接，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定均有学习体会（至少我认为是靠谱的），入门随手甩你十本书那不叫指点，叫装逼。
+注：划掉表示有感觉有过一些研究，一般会附上个人思考或有用的资源链接，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定均有学习体会（至少我认为是靠谱的），问如何入门随手甩你十本书那不叫指点，叫装逼。
 
 ## JavaScript
 * ~~闭包~~ 
@@ -20,6 +20,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* [Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 
 	* 《JavaScript高级程序设计》6.3
 	* 《Javascript语言精粹》第5章
+* JS垃圾回收机制
 * 作用域链
 * 正则表达式
 * Promise
@@ -67,7 +68,6 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 ## Thinking
 
 * Design Patterns
-* Regular Expression
 * MVVM && MV*
 	* " I haven't truly met the same MVC implementation pattern twice." 
 
@@ -79,7 +79,13 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * gulp
 
 
-## Basic
+## General
+
 * Session && Cookie && SessionStorage && LocalStorage
 * 跨域问题
-* 
+* XSS(Cross-site scripting)
+* HTTP
+	* HTTP && HTTPS
+	* HTTP2.0
+* 性能优化
+* Regular Expression
