@@ -68,6 +68,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 ## Thinking
 
 * Design Patterns
+	* Decorator 
 * MVVM && MV*
 	* " I haven't truly met the same MVC implementation pattern twice." 
 
