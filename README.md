@@ -63,6 +63,8 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 ## Python
 
 * generator
+* yield
+* 
 
 
 ## Thinking
@@ -75,7 +77,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 
 ## Tools
 
-* Webpack
+* webpack
 * gulp
 
 
