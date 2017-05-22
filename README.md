@@ -63,6 +63,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 ## Python
 
 * generator(yield)
+* multiprocessing
 
 
 ## Thinking
@@ -90,3 +91,4 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* HTTP2.0
 * 性能优化
 * Regular Expression
+* 
