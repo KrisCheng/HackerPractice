@@ -28,7 +28,8 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * jquery
 * this对象
 * 浏览器跨域
-* .call && .apply
+* DOM操作
+* .call() && .apply()
 * Node.js
  	* koa
  
@@ -82,7 +83,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * gulp
 
 
-## General
+## Network
 
 * Session && Cookie && SessionStorage && LocalStorage
 * 跨域问题
@@ -91,5 +92,9 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* HTTP && HTTPS
 	* HTTP2.0
 * 性能优化
+
+
+## General
+
 * Regular Expression
 	* [正则表达式30分钟入门教程](https://deerchao.net/tutorials/regex/regex.htm)
