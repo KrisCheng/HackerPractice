@@ -64,6 +64,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 
 * generator(yield)
 * multiprocessing
+	* Queue 
 
 
 ## Thinking
