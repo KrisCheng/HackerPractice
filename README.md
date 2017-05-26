@@ -71,6 +71,8 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* urllib
 	* PIL(用于图像操作)
 	* Tkinter(GUI编程)
+* 网络编程
+	* TCP编程 
 
 ## Thinking
 
@@ -95,7 +97,8 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * HTTP
 	* HTTP && HTTPS
 	* HTTP2.0
-* 性能优化
+
+* TCP/IP
 
 
 ## General
