@@ -69,6 +69,8 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * Module
 	* collections
 	* urllib
+	* PIL(用于图像操作)
+	* 
 
 ## Thinking
 
