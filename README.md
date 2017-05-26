@@ -4,7 +4,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 
 ## TodoList
 
-注：划掉表示有感觉有过一些研究，一般会附上个人思考或有用的资源链接，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定均有学习体会（至少我认为是靠谱的），问如何入门随手甩你十本书那不叫指点，叫装逼。
+注：划掉表示有感觉有过一些研究，一般会附上个人思考或有用的资源链接。只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定均有学习体会（至少我认为是靠谱的），问如何入门随手甩你十本书那不叫指点，叫装逼。
 
 ## JavaScript
 * ~~闭包~~ 
@@ -66,7 +66,9 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * generator(yield)
 * multiprocessing
 	* Queue 
-
+* Module
+	* collections
+	* urllib
 
 ## Thinking
 
@@ -98,3 +100,5 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 
 * Regular Expression
 	* [正则表达式30分钟入门教程](https://deerchao.net/tutorials/regex/regex.htm)
+
+* MD(Message Digest)5摘要算法
