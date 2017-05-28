@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#请结合本目录下socket_server.py一起使用
+#请结合本目录下tcp_server.py一起使用
 import socket
 
 # 创建Socket

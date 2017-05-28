@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#请结合本目录下socket_client.py一起使用
+#请结合本目录下udp_client.py一起使用
 import socket,time,threading
 
 def tcplink(sock, addr):
@@ -18,18 +18,15 @@ def tcplink(sock, addr):
 
 
 # 创建Socket
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # 监听端口
 s.bind(('127.0.0.1', 9999))
 
-s.listen(5)
-print('Waiting for Connection ...')
+print('Bind UDP on 9999 ...')
 
 while True:
-    # 接受一个新连接
-    sock, addr = s.accept()
-
-    # 创建一个新线程来处理TCP连接
-    t = threading.Thread(target=tcplink, args=(sock, addr))
-    t.start()
+    # 接收数据
+    data, addr = s.recvfrom(1024)
+    print('Received from %s:%s.' % addr)
+    s.sendto(b'Hello, %s!' % data, addr)

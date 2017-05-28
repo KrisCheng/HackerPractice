@@ -72,7 +72,9 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* PIL(用于图像操作)
 	* Tkinter(GUI编程)
 * 网络编程
-	* TCP编程 
+	* TCP/UDP
+		* [TCP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004374523e495f640612f4b08975398796939ec3c000)
+		* [UDP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004977916a212e2168e21449981ad65cd16e71201000) 
 
 ## Thinking
 
@@ -99,6 +101,8 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* HTTP2.0
 
 * TCP/IP
+	* TCP && UDP
+		*  [TCP和UDP之间的区别](http://feinibuke.blog.51cto.com/1724260/340272)
 
 
 ## General
