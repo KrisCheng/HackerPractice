@@ -7,6 +7,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 注：划掉表示有感觉有过一些研究，一般会附上个人思考或有用的资源链接。只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定均有学习体会（至少我认为是靠谱的），问如何入门随手甩你十本书那不叫指点，叫装逼。
 
 ## JavaScript
+
 * ~~闭包~~ 
 	* [浅谈JavaScript闭包 — 从一道面试题说起](http://pengcheng.tech/2017/05/10/%E6%B5%85%E8%B0%88javascript%E9%97%AD%E5%8C%85-%E4%BB%8E%E4%B8%80%E9%81%93%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AF%B4%E8%B5%B7/) 
 	* [详解js闭包](https://segmentfault.com/a/1190000000652891)
@@ -44,11 +45,13 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* [Vue实例](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001475449022563a6591e6373324d1abd93e0e3fa04397f000)
 
 ## HTML
+
 * 离线存储
 
 
 
 ## CSS
+
 * 伪类
 * 清除浮动
 * 垂直居中 && 水平垂直居中
@@ -77,7 +80,9 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 		* [UDP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004977916a212e2168e21449981ad65cd16e71201000) 
 	* 发送电子邮件
 		* [SMTP发送邮件](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432005226355aadb8d4b2f3f42f6b1d6f2c5bd8d5263000) 
-		* 
+	* Flask
+	* django
+
 
 ## Thinking
 
@@ -107,6 +112,11 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* TCP && UDP
 		*  [TCP和UDP之间的区别](http://feinibuke.blog.51cto.com/1724260/340272)
 
+## Database
+
+* ACID properties
+* Object Relational Mapping(ORM)
+* SQLite
 
 ## General
 
