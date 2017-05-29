@@ -1,51 +1,39 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# 发送邮件
-# from email import encoders
-# from email.header import Header
-# from email.mime.text import MIMEText
-# from email.utils import parseaddr, formataddr
-# import smtplib
-#
-# msg = MIMEText("hello, this is a Mail send by Python...", 'plain', 'utf-8')
-#
-# # 输入邮件的地址口令
-# # from_addr = input('From:')
-# # password = input('Password:')
-#
-# # 收件人地址
-# # to_addr = input('To:')
-#
-# # SMTP服务器地址
-# # smtp_server = input('SMTP Server:')
-#
-# server = smtplib.SMTP('smtp.163.com', 25) #默认端口465
-# server.set_debuglevel(1)
-# server.login('tjupengcheng@163.com', 'Pengcheng00')
-# server.sendmail('tjupengcheng@163.com', ['743628145@qq.com'], msg.as_string())
-# print('send success!')
-# server.quit()
+# SMTP发送邮件
+from email import encoders
+from email.header import Header
+from email.mime.text import MIMEText
+from email.utils import parseaddr, formataddr
 import smtplib
-import email.mime.multipart
-import email.mime.text
 
-msg=email.mime.multipart.MIMEMultipart()
-msg['from']='tjupengcheng@163.com'
-msg['to']='743628145@qq.com'
-msg['subject']='test'
-content='''''
-    你好，
-            这是一封自动发送的邮件。
+# 格式化工具
+def _format_addr(s):
+    name, addr = parseaddr(s)
+    return formataddr((Header(name, 'utf-8').encode(), addr))
 
-        www.ustchacker.com
-'''
-txt=email.mime.text.MIMEText(content)
-msg.attach(txt)
+from_addr = input('From: ')
+password = input('Password: ')
+to_addr = input('To: ')
+smtp_server = input('SMTP server: ')
+
+# 邮件主题及内容
+msg = MIMEText('hello, send by Python...', 'plain', 'utf-8')
+msg['from'] = _format_addr('Python发送邮件 <%s>' % from_addr)
+msg['to'] = _format_addr('管理员 <%s>' % to_addr)
+msg['subject'] = '这是来自SMTP的问候...'
+
+# content='''
+#     你好，
+#             这是来自SMTP的问候。
+# '''
+# txt=email.mime.text.MIMEText(content)
+# msg.attach(txt)
 
 smtp=smtplib
 smtp=smtplib.SMTP()
-smtp.connect('smtp.163.com','25')
-smtp.login('tjupengcheng@163.com','pengcheng00')
-smtp.sendmail('tjupengcheng@163.com','743628145@qq.com',str(msg))
+smtp.connect(smtp_server,'25') #默认端口为25
+smtp.login(from_addr, password)
+smtp.sendmail(from_addr, to_addr, str(msg))
 smtp.quit()
