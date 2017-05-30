@@ -30,6 +30,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * this对象
 * 浏览器跨域
 * DOM操作
+* 异步编程
 * .call() && .apply()
 * Node.js
  	* koa
@@ -116,6 +117,7 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 
 * ACID properties
 * Object Relational Mapping(ORM)
+* 连接池
 * SQLite
 
 ## General
@@ -124,3 +126,4 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* [正则表达式30分钟入门教程](https://deerchao.net/tutorials/regex/regex.htm)
 
 * MD(Message Digest)5摘要算法
+* 
