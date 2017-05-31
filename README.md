@@ -4,11 +4,16 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 
 ## TodoList
 
-注：划掉表示有感觉有过一些研究，一般会附上个人思考或有用的资源链接。只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定均有学习体会（至少我认为是靠谱的），问如何入门随手甩你十本书那不叫指点，叫装逼。
+注：所有主题都源于个人学习和使用中的思考，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定有过学习体会（至少我认为是靠谱的），希望能积累成一个较为系统的编程学习资源库，欢迎star，欢迎交流。
+
+（问如何入门随手甩你十本书那不叫指点，叫装逼。）
 
 ## JavaScript
-
-* ~~闭包~~ 
+* 数据类型
+	* 《JavaScript高级程序设计》3.4
+	* [Is JavaScript an untyped language?](https://stackoverflow.com/questions/964910/is-javascript-an-untyped-language)
+	* [undefined与null的区别](http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
+* 闭包
 	* [浅谈JavaScript闭包 — 从一道面试题说起](http://pengcheng.tech/2017/05/10/%E6%B5%85%E8%B0%88javascript%E9%97%AD%E5%8C%85-%E4%BB%8E%E4%B8%80%E9%81%93%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AF%B4%E8%B5%B7/) 
 	* [详解js闭包](https://segmentfault.com/a/1190000000652891)
 	* [学习JavaScript闭包](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
@@ -56,11 +61,11 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 * 伪类
 * 清除浮动
 * 垂直居中 && 水平垂直居中
-* ~~position属性~~
+* position属性
 	* [CSS Layout - The position Property](https://www.w3schools.com/css/css_positioning.asp) 
 	* [position](http://zh.learnlayout.com/position.html)
 * flex布局
-* ~~inline-block~~
+* inline-block
 	* [CSS Layout - inline-block](https://www.w3schools.com/css/css_inline-block.asp)
 	* "inline-block elements are like inline elements but they can have a width and a height."	 
 
@@ -126,4 +131,4 @@ this is a code snippet set which comes from my daily practice(focus on the basic
 	* [正则表达式30分钟入门教程](https://deerchao.net/tutorials/regex/regex.htm)
 
 * MD(Message Digest)5摘要算法
-* 
+
