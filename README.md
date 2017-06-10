@@ -9,6 +9,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 （问如何入门随手甩你十本书那不叫指点，叫装逼。）
 
 ## JavaScript
+
 * 数据类型
 	* 《JavaScript高级程序设计》3.4
 	* [Is JavaScript an untyped language?](https://stackoverflow.com/questions/964910/is-javascript-an-untyped-language)
