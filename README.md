@@ -88,6 +88,11 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 		* [UDP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004977916a212e2168e21449981ad65cd16e71201000) 
 	* 发送电子邮件
 		* [SMTP发送邮件](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432005226355aadb8d4b2f3f42f6b1d6f2c5bd8d5263000) 
+
+* metaclass(元类)
+* IO编程
+	* [IO编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431917590955542f9ac5f5c1479faf787ff2b028ab47000)
+
 * Flask
 * django
 
@@ -117,13 +122,19 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 
 * TCP/IP
 	* TCP && UDP
-		*  [TCP和UDP之间的区别](http://feinibuke.blog.51cto.com/1724260/340272)
+		* [TCP和UDP之间的区别](http://feinibuke.blog.51cto.com/1724260/340272)
 
 ## Database
 
 * ACID properties
 * Object Relational Mapping(ORM)
+	* [What is an ORM and where can I learn more about it?](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it) 
+	* [Wiki](https://zh.wikipedia.org/wiki/%E5%AF%B9%E8%B1%A1%E5%85%B3%E7%B3%BB%E6%98%A0%E5%B0%84)
+
 * 连接池
+	* [What is Connection Pooling? Why do we need it?](http://geekexplains.blogspot.jp/2008/06/what-is-connection-pooling-why-do-we.html) [中文](http://www.importnew.com/8179.html)
+
+	
 * SQLite
 
 ## General
