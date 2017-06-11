@@ -132,4 +132,6 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [正则表达式30分钟入门教程](https://deerchao.net/tutorials/regex/regex.htm)
 
 * MD(Message Digest)5摘要算法
-
+* 位操作符
+* 重载（Overload）和重写（Override）
+* 值传递和引用传递
