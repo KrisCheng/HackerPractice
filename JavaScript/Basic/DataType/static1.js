@@ -29,3 +29,12 @@ console.log(isNaN(true));
 
 console.log(parseFloat(12323.23e10));
 console.log(('12345' * 1 === 12345));
+
+//property
+var person = new Object();
+person.name = "Kris";
+console.log(person.name); //Kris
+
+var name = "Kris";
+name.age = 23;
+// console.log(name.age); //报错

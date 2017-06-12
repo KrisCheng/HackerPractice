@@ -14,6 +14,9 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* 《JavaScript高级程序设计》3.4
 	* [Is JavaScript an untyped language?](https://stackoverflow.com/questions/964910/is-javascript-an-untyped-language)
 	* [undefined与null的区别](http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
+
+* 按值传递和按引用传递 
+	* 《JavaScript高级程序设计》4.1.3 
 * 闭包
 	* [浅谈JavaScript闭包 — 从一道面试题说起](http://pengcheng.tech/2017/05/10/%E6%B5%85%E8%B0%88javascript%E9%97%AD%E5%8C%85-%E4%BB%8E%E4%B8%80%E9%81%93%E9%9D%A2%E8%AF%95%E9%A2%98%E8%AF%B4%E8%B5%B7/) 
 	* [详解js闭包](https://segmentfault.com/a/1190000000652891)
@@ -28,7 +31,9 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* 《JavaScript高级程序设计》6.3
 	* 《Javascript语言精粹》第5章
 * JS垃圾回收机制
+	* 《JavaScript高级程序设计》4.3
 * 作用域链
+	* 《JavaScript高级程序设计》4.2 
 * 正则表达式
 * Promise
 * 回调函数
