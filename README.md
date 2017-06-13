@@ -14,7 +14,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* 《JavaScript高级程序设计》3.4
 	* [Is JavaScript an untyped language?](https://stackoverflow.com/questions/964910/is-javascript-an-untyped-language)
 	* [undefined与null的区别](http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
-
+* Date
+	* 《JavaScript高级程序设计》5.3
 * 按值传递和按引用传递 
 	* 《JavaScript高级程序设计》4.1.3 
 * 闭包
@@ -139,7 +140,6 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * 连接池
 	* [What is Connection Pooling? Why do we need it?](http://geekexplains.blogspot.jp/2008/06/what-is-connection-pooling-why-do-we.html) [中文](http://www.importnew.com/8179.html)
 
-	
 * SQLite
 
 ## General
