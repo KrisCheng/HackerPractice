@@ -37,7 +37,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* 《JavaScript高级程序设计》4.2 
 * 正则表达式
 	* 《JavaScript高级程序设计》5.4
-	* [正则表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
+	* [正则表达式 MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
 * Promise
 * 回调函数
 * jquery
