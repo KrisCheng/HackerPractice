@@ -49,6 +49,10 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * DOM操作
 * 异步编程
 * .call() && .apply()
+	* [[MDN] Function.prototype.apply()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+	* [[MDN] Function.prototype.call()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+	* [深入浅出 妙用Javascript中apply、call、bind](https://www.cnblogs.com/coco1s/p/4833199.html)
+	* "The true power of apply() and call() lies not in their ability to pass arguments but rather in their ability to augment the this value inside of the function."
 * Node.js
  	* koa
  

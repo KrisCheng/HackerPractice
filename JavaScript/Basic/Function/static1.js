@@ -7,6 +7,7 @@ function sum(value1, value2){
 }
 var anothersum = sum;
 console.log(anothersum(10,2222));
+console.log(anothersum.length);
 
 //没有重载
 console.log(test(10,10)); //30
