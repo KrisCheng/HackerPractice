@@ -16,6 +16,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [undefined与null的区别](http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
 * Date
 	* 《JavaScript高级程序设计》5.3
+* Funcion类型
+	* 《JavaScript高级程序设计》5.5
 * 按值传递和按引用传递 
 	* 《JavaScript高级程序设计》4.1.3 
 * 闭包
@@ -41,7 +43,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * Promise
 * 回调函数
 * jquery
-* this对象
+* this关键词
+	* [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/)  
 * 浏览器跨域
 * DOM操作
 * 异步编程

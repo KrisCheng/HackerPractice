@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Function</title>
+  </head>
+  <body>
+  <script src="static1.js"></script>
+  <script src="static2.js"></script>
+  <script type="text/javascript">
+    // this
+    window.color = "red";
+    var o = {
+      color: "blue"
+    };
+    function sayColor(){
+      console.log(this.color);
+    };
+    sayColor();
+    o.sayColor =  sayColor;
+    o.sayColor();
+  </script>
+  </body>
+</html>
