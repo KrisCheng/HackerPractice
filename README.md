@@ -33,6 +33,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 
 	* 《JavaScript高级程序设计》6.3
 	* 《Javascript语言精粹》第5章
+
+
 * JS垃圾回收机制
 	* 《JavaScript高级程序设计》4.3
 * 作用域链
@@ -53,6 +55,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [[MDN] Function.prototype.call()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
 	* [深入浅出 妙用Javascript中apply、call、bind](https://www.cnblogs.com/coco1s/p/4833199.html)
 	* "The true power of apply() and call() lies not in their ability to pass arguments but rather in their ability to augment the this value inside of the function."
+
 * Node.js
  	* koa
  
@@ -115,6 +118,10 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 
 * Design Patterns
 	* Decorator 
+	* Factory Pattern
+		* [工厂模式](http://www.runoob.com/design-pattern/factory-pattern.html) 
+		* "In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface."
+
 * MVVM && MV*
 	* " I haven't truly met the same MVC implementation pattern twice." 
 
@@ -160,3 +167,5 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * 位操作符
 * 重载（Overload）和重写（Override）
 * 值传递和引用传递
+* Hash Table
+	* [Hash Tables](http://algs4.cs.princeton.edu/34hash/) 

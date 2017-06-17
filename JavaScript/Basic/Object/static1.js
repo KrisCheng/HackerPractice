@@ -1,33 +1,54 @@
 'use strict';
-var person = {
-  name : 'Kris',
-  age : 22
+
+//Object
+var person = new Object()
+person.name = "Kris";
+person.age = 22;
+person.job = "Front-end Engineer";
+
+person.sayName = function(){
+  console.log(this.name);
+}
+
+person.sayName();
+
+//A better way
+var anotherperson = {
+  name: "Chan",
+  age: 22,
+  job: "Front-end Engineer",
+  sayName: function(){
+    console.log(this.name)
+  }
 };
-console.log(person.name);
+anotherperson.sayName();
 
-//创建数组
-var arr1 = new Array();
-var arr2 = new Array(20);
-var arr3 = new Array("Kris", "Chan");
-console.log(arr2.length);
+//使用工厂模式创建对象
+function createPerson(name, age, job){
+  var o = new Object();
+  o.name = name;
+  o.age = age;
+  o.job = job;
+  o.sayName = function(){
+    console.log(this.name);
+  }
+  return o;
+}
+var person1 = createPerson("阿呆", 23, "打杂");
+person1.sayName();
 
-var arr4 = ["A", "B", "C"];
-// arr4.length = 10;
-arr4[5] = "E";
-console.log(arr4[5]);
-console.log(arr4.length); //自动扩展数组
+//构造函数模式创建对象
+function Person(name, age, job){
+  this.name = name;
+  this.age = age;
+  this.job = job;
+  this.sayName = sayName;
+}
 
-var colors = ["red", "black", "blue"];
-console.log(colors.toString());
-console.log(colors.valueOf());
-//以:分隔
-console.log(colors.join(":"));
-
-var colors2 = new Array();
-var count = colors2.push("red", "black");
-console.log(count);
-count = colors2.push("blue");
-console.log(count);
-var item = colors2.unshift("hello");
-console.log(item);
-console.log(colors2.length);
+function sayName(){
+    console.log(this.name);
+}
+var person2 = new Person("阿美", 23, "扫地");
+person2.sayName();
+console.log(person2.constructor === Person); //true
+console.log(person2 instanceof Person); //true
