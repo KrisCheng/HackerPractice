@@ -32,9 +32,10 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [原型继承](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014344997013405abfb7f0e1904a04ba6898a384b1e925000)
 	* [Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 
 	* 《JavaScript高级程序设计》6.3
-	* 《Javascript语言精粹》第5章
+	* 《JavaScript语言精粹》第5章
 
-
+* 原型属性(Prototype)
+	* 
 * JS垃圾回收机制
 	* 《JavaScript高级程序设计》4.3
 * 作用域链
