@@ -12,7 +12,7 @@ function createFunctions1(){
 }
 
 var test1 = createFunctions1();
-console.log(test1[7]());//每一项都是10
+console.log(test1[0]());//每一项都是10
 
 
 //闭包
@@ -29,11 +29,8 @@ function createFunctions2(){
 }
 
 var test1 = createFunctions2();
-console.log(test1[1]());
+console.log(test1[2]());//根据输入得到输出
 
 //匿名函数
 console.log(typeof function(){});
 console.log((function(x,y){return x+y;})(2,41));
-
-
-//

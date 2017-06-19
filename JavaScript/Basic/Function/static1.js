@@ -1,7 +1,6 @@
 'use strict';
 
 //Function
-
 function sum(value1, value2){
   return value1 + value2;
 }
@@ -60,3 +59,14 @@ data.sort(createComparisionFunction("age"));
 console.log(data[0]);
 data.sort(createComparisionFunction("name"));
 console.log(data[0]);
+
+//可以把函数声明放到调用它的语句后面
+sayHi();
+
+function sayHi(){
+  console.log("Hello!");
+}
+
+// var sayHi = function sayHi(){
+//   alert("Hello!");
+// }

@@ -40,5 +40,5 @@ function DOG(name){
 　　var dogA = new DOG('大毛');
 　　var dogB = new DOG('二毛');
 
-　　alert(dogA.species); // 犬科
-　　alert(dogB.species); // 犬科
+　　console.log(dogA.species); // 犬科
+　　console.log(dogB.species); // 犬科
