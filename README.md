@@ -46,6 +46,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * 正则表达式
 	* 《JavaScript高级程序设计》5.4
 	* [正则表达式 MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
+* 间歇调用和超时调用
+	* 《JavaScript高级程序设计》8.1.6
 * Promise
 * 回调函数
 * jquery
