@@ -28,6 +28,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [详解js闭包](https://segmentfault.com/a/1190000000652891)
 	* [学习JavaScript闭包](http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html)
    * 《JavaScript高级程序设计》7.2
+
 * AJAX
 	* XMLHttpRequest
 * JS事件
