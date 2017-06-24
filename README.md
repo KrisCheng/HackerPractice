@@ -59,6 +59,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * 浏览器跨域
 * DOM操作
 * 异步编程
+
 * .call() && .apply()
 	* [[MDN] Function.prototype.apply()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 	* [[MDN] Function.prototype.call()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
@@ -92,6 +93,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * position属性
 	* [CSS Layout - The position Property](https://www.w3schools.com/css/css_positioning.asp) 
 	* [position](http://zh.learnlayout.com/position.html)
+
 * flex布局
 * inline-block
 	* [CSS Layout - inline-block](https://www.w3schools.com/css/css_inline-block.asp)
