@@ -66,6 +66,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [深入浅出 妙用Javascript中apply、call、bind](https://www.cnblogs.com/coco1s/p/4833199.html)
 	* "The true power of apply() and call() lies not in their ability to pass arguments but rather in their ability to augment the this value inside of the function."
 
+* 能力检测（兼容性问题）
+
 * Node.js
  	* koa
  
