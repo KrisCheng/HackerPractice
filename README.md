@@ -57,7 +57,10 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * this关键词
 	* [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/)  
 * 浏览器跨域
-* DOM操作
+* DOM
+	* NodeList
+	* NamedNodeMap
+	* HTMLCollection 
 * 异步编程
 
 * .call() && .apply()
@@ -67,7 +70,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* "The true power of apply() and call() lies not in their ability to pass arguments but rather in their ability to augment the this value inside of the function."
 
 * 能力检测（兼容性问题）
-
+* 浅拷贝与深拷贝
 * Node.js
  	* koa
  
