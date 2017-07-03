@@ -31,7 +31,10 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 
 * AJAX
 	* XMLHttpRequest
-* JS事件
+* JS事件（Event）
+	* JavaScript高级程序设计》13
+	* 冒泡与捕获
+
 * JS继承
 	* [浅谈JavaScript继承（原型链）](http://pengcheng.tech/2017/05/11/%E6%B5%85%E8%B0%88javascript%E7%BB%A7%E6%89%BF%EF%BC%88%E5%8E%9F%E5%9E%8B%E9%93%BE%EF%BC%89/)
 	* [原型继承](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014344997013405abfb7f0e1904a04ba6898a384b1e925000)
