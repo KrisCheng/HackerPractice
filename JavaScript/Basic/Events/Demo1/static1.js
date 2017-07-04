@@ -26,6 +26,7 @@ var handler = function(event){
   switch(event.type){
     case "click":
       alert("Clicked!");
+      console.log(event.eventPhase);
       break;
     case "mouseover":
       event.target.style.backgroundColor = "red";
