@@ -59,6 +59,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * jquery
 * this关键词
 	* [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/)  
+* 表单验证
+	* 《JavaScript高级程序设计》14
 * 浏览器跨域
 * DOM
 	* 《JavaScript高级程序设计》10，11，12
