@@ -56,6 +56,9 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* 《JavaScript高级程序设计》8.1.6
 * Promise
 * 回调函数
+* Canvas
+	* 《JavaScript高级程序设计》15
+	* WebGL	
 * jquery
 * this关键词
 	* [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/)  
