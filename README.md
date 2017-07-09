@@ -14,6 +14,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* 《JavaScript高级程序设计》3.4
 	* [Is JavaScript an untyped language?](https://stackoverflow.com/questions/964910/is-javascript-an-untyped-language)
 	* [undefined与null的区别](http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
+	* [instanceof和typeof的区别](http://www.cnblogs.com/eoiioe/archive/2008/12/31/1366081.html)
 
 * Date
 	* 《JavaScript高级程序设计》5.3
@@ -65,6 +66,8 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 * 表单验证
 	* 《JavaScript高级程序设计》14
 * 浏览器跨域
+	*[JavaScript跨域总结与解决办法](http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m0)
+	 
 * DOM
 	* 《JavaScript高级程序设计》10，11，12
 	* NodeList
