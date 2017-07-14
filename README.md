@@ -1,8 +1,6 @@
 # HackerPractice
 
-this is a code snippet sets which come from my daily practice(focus on the basic domain usage).
-
-## TodoList
+这是记录我平时个人学习的一个库，主要用于记录各种语言（JavaScript, Python, Java等）的具体知识点（包括基本用法，框架等等，重基础而轻应用）以及一些基本计算机领域知识和一些有用的链接。
 
 注：所有主题都源于个人学习和使用中的思考，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定有过学习体会（至少我认为是靠谱的），希望能积累成一个较为系统的编程学习资源库，欢迎star，欢迎交流。
 
@@ -31,9 +29,11 @@ this is a code snippet sets which come from my daily practice(focus on the basic
    * 《JavaScript高级程序设计》7.2
 
 * AJAX
+	* 《JavaScript高级程序设计》21
 	* XMLHttpRequest
+
 * 事件（Event）
-	* JavaScript高级程序设计》13
+	* 《JavaScript高级程序设计》13
 	* 冒泡与捕获
 
 * 继承
@@ -41,7 +41,7 @@ this is a code snippet sets which come from my daily practice(focus on the basic
 	* [原型继承](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/0014344997013405abfb7f0e1904a04ba6898a384b1e925000)
 	* [Javascript继承机制的设计思想](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html) 
 	* 《JavaScript高级程序设计》6.3
-	* 《JavaScript语言精粹》第5章
+	* 《JavaScript语言精粹》5
 
 * 原型属性(Prototype)
 * 模块模式
