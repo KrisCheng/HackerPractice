@@ -1,6 +1,6 @@
 # HackerPractice
 
-这是记录我平时个人学习的一个库，主要用于记录各种语言（JavaScript, Python, Java等）的具体知识点（包括基本用法，框架等等，重基础而轻应用）以及一些基本计算机领域知识和一些有用的链接。
+这个repository是我平时个人的学习笔记和代码，主要用于记录各种语言（JavaScript, Python, Java等）的具体知识点（包括基本用法，框架等等，重基础而轻应用）以及一些基本计算机领域知识和一些有用的链接。
 
 注：所有主题都源于个人学习和使用中的思考，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定有过学习体会（至少我认为是靠谱的），希望能积累成一个较为系统的编程学习资源库，欢迎star，欢迎交流。
 
@@ -91,6 +91,11 @@
 		* 数组
 	* [Difference between JSON.stringify and JSON.parse](https://stackoverflow.com/questions/17785592/difference-between-json-stringify-and-json-parse)  
 
+* 数据存储
+	* 《JavaScript高级程序设计》23
+	* Cookie 
+	* IndexedDB
+
 * 能力检测（兼容性问题）
 * 浅拷贝与深拷贝
 * Node.js
@@ -105,6 +110,10 @@
 * Vue
 	* [仿饿了么前端 Vue2.0](https://github.com/KrisCheng/VuePractice)
 	* [Vue实例](http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001475449022563a6591e6373324d1abd93e0e3fa04397f000)
+
+* 最佳实践
+	* 《JavaScript高级程序设计》24
+ 
 
 ## HTML
 
@@ -174,6 +183,8 @@
 ## Network
 
 * Session && Cookie && SessionStorage && LocalStorage
+	* 《JavaScript高级程序设计》23
+
 * 跨域问题
 * XSS(Cross-site scripting)
 * HTTP

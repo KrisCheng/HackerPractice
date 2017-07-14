@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cookie</title>
+  </head>
+  <body>
+      <p>Name: <span id="name-value">(none)</span><br />
+          Book: <span id="book-value">(none)</span></p>
+      <input type="button" value="Delete Cookies" id="delete-btn" />
+      <p>Refresh the page to see the values. Click &quot;Delete Cookies&quot; to remove them.</p>
+  </body>
+</html>
+<script src="CookieUtil.js"></script>
+<script src="EventUtil.js"></script>
+<script src="static1.js"></script>
+<script>
+    EventUtil.addHandler(window, "load", function(){
+
+        document.getElementById("name-value").innerHTML = CookieUtil.get("name");
+        document.getElementById("book-value").innerHTML = CookieUtil.get("book");
+
+        EventUtil.addHandler(document.getElementById("delete-btn"), "click", function(){
+            CookieUtil.unset("name");
+            CookieUtil.unset("book");
+        });
+
+        //set some cookies
+        CookieUtil.set("name", "Kris");
+        CookieUtil.set("book", "JavaScript");
+    });
+</script>
