@@ -53,20 +53,23 @@
 * 正则表达式
 	* 《JavaScript高级程序设计》5.4
 	* [正则表达式 MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
+
 * 间歇调用和超时调用
 	* 《JavaScript高级程序设计》8.1.6
 * Promise
 * 回调函数
+
 * Canvas
 	* 《JavaScript高级程序设计》15
 	* WebGL	
+
 * jquery
 * this关键词
 	* [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/)  
 * 表单验证
 	* 《JavaScript高级程序设计》14
 * 浏览器跨域
-	*[JavaScript跨域总结与解决办法](http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m0)
+	* [JavaScript跨域总结与解决办法](http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m0)
 	 
 * DOM
 	* 《JavaScript高级程序设计》10，11，12
