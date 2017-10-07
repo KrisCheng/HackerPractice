@@ -1,10 +1,33 @@
 # HackerPractice
 
-这个repository是我平时个人的学习笔记和代码，主要用于记录各种语言（JavaScript, Python, Java等）的具体知识点（包括基本用法，框架等等，重基础而轻应用）以及一些基本计算机领域知识和一些有用的链接。
+这个repository是我平时个人的学习笔记和代码，主要用于记录各种语言（JavaScript, Python, Java等）的具体知识点及实践，以及一些基本计算机领域知识和有用的链接。
 
-注：所有主题都源于个人学习和使用中的思考，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定有过学习体会（至少我认为是靠谱的），希望能积累成一个较为系统的编程学习资源库，欢迎star，欢迎交流。
+注：所有主题都源于个人学习和使用中的思考，只写想研究的和研究过的，拒绝正确而无用的资源库，所有附上链接一定有过学习体会（至少我认为是靠谱的），希望能积累成一个较为系统的编程学习资源库，欢迎star和fork，欢迎交流。
 
-（问如何入门随手甩你十本书那不叫指点，叫装逼。）
+## Python
+
+* generator(yield)
+* coroutine（协程）
+* multiprocessing
+	* Queue 
+* Module
+	* collections
+	* urllib
+	* PIL(用于图像操作)
+	* Tkinter(GUI编程)
+* 网络编程
+	* TCP/UDP
+		* [TCP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004374523e495f640612f4b08975398796939ec3c000)
+		* [UDP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004977916a212e2168e21449981ad65cd16e71201000) 
+	* 发送电子邮件
+		* [SMTP发送邮件](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432005226355aadb8d4b2f3f42f6b1d6f2c5bd8d5263000) 
+
+* metaclass(元类)
+* IO编程
+	* [IO编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431917590955542f9ac5f5c1479faf787ff2b028ab47000)
+
+* Flask
+* django
 
 ## JavaScript
 
@@ -136,30 +159,6 @@
 	* "inline-block elements are like inline elements but they can have a width and a height."	 
 
 
-## Python
-
-* generator(yield)
-* coroutine（协程）
-* multiprocessing
-	* Queue 
-* Module
-	* collections
-	* urllib
-	* PIL(用于图像操作)
-	* Tkinter(GUI编程)
-* 网络编程
-	* TCP/UDP
-		* [TCP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004374523e495f640612f4b08975398796939ec3c000)
-		* [UDP编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432004977916a212e2168e21449981ad65cd16e71201000) 
-	* 发送电子邮件
-		* [SMTP发送邮件](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432005226355aadb8d4b2f3f42f6b1d6f2c5bd8d5263000) 
-
-* metaclass(元类)
-* IO编程
-	* [IO编程](http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431917590955542f9ac5f5c1479faf787ff2b028ab47000)
-
-* Flask
-* django
 
 ## Thinking
 
