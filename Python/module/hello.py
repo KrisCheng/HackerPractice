@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 ' a test module '
 
-__author__ = 'Kris Chan'
+__author__ = 'Kris Peng'
+
 
 import sys
 
